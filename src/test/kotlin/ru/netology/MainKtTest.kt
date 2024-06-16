@@ -16,7 +16,7 @@ class MainKtTest {
 
         val commission = calculateCommission(transferAmount, cardType, isUKRayTransfer)
 
-        assertEquals(1.0, commission, 0.0)
+        assertEquals(0.0, commission, 0.0)
     }
     @Test
     fun `calculateCommission for Maestro card with transfer amount outside range`() {
